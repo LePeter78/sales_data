@@ -11,3 +11,6 @@ Visual Studio Code
 Python:
 - json
 - csv
+
+This project is work in progress.
+The next update will include more python libraries
