@@ -1,5 +1,4 @@
 # Sales Data
-
 This console app manages data from a csv file by reading, transforming and storing it in a json file. The app can perform queries on the data:
 - calculate the total revenue of all sales
 - calculate the revenue of each category
@@ -9,6 +8,7 @@ This console app manages data from a csv file by reading, transforming and stori
 The user is presented with a menu on the console that allows them to run these queries, or select a new csv file to read data from.
 
 ## Used technologies:
+Used technologies:
 Visual Studio Code
 Python:
 - json
