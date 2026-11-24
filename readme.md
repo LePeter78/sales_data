@@ -9,12 +9,12 @@ The processed data gets stored in 3 *.json* files:
 - verified_sales.json: records with no fault, ready for further processing.
 
 ## Queries:
-Verified sales are used for quieries in *queries.ipnyb*. Currently the following queries exist:
+Verified sales are used for queries in *queries.ipnyb*. Currently the following queries exist:
 - Total Revenue: the sum of the values of all sold products.
-- Sales by category: a list of categories with their total values sold, in decreasing order.
-- Top customer: the customer with the most amount of money spent on products.
-- Top products: a list of products with the most amount sold.
-- Most Valuable day: the day the most amounty of money was made
+- Sales by Category: a list of categories with their total values sold, in decreasing order.
+- Top Customer: the customer with the most amount of money spent on products.
+- Top Products: a list of products with the most amount sold.
+- Most Valuable Day: the day the most amounty of money was made
 
 ## Used technologies:
 Used technologies:
@@ -26,4 +26,4 @@ Python:
 - pandas
 
 ## Next Update:
-Implementing the **Polars** library to handle larger data effectively.
+Implementing more advanced file managment, using the **Pathlib** library
