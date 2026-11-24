@@ -1,11 +1,20 @@
 # Sales Data
-This console app manages data from a csv file by reading, transforming and storing it in a json file. The app can perform queries on the data:
-- calculate the total revenue of all sales
-- calculate the revenue of each category
-- get the customer who spent the most money
-- get the product with the highest quantity sold
+This project simulates the sales of a company and processes its data for analysing.
 
-The user is presented with a menu on the console that allows them to run these queries, or select a new csv file to read data from.
+## Handling data:
+The *data_handler.ipynb* notebook reads the data from *raw_data.csv*. It filters dirty data, such as missing or unknown values, or invalid numbers. Dirty data is not corrected, only marked as **NA**.
+The processed data gets stored in 3 *.json* files:
+- all_sales.json: every processed record.
+- faulty_data.json: only records with missing or incorrect data.
+- verified_sales.json: records with no fault, ready for further processing.
+
+## Queries:
+Verified sales are used for quieries in *queries.ipnyb*. Currently the following queries exist:
+- Total Revenue: the sum of the values of all sold products.
+- Sales by category: a list of categories with their total values sold, in decreasing order.
+- Top customer: the customer with the most amount of money spent on products.
+- Top products: a list of products with the most amount sold.
+- Most Valuable day: the day the most amounty of money was made
 
 ## Used technologies:
 Used technologies:
@@ -13,6 +22,8 @@ Visual Studio Code
 Python:
 - json
 - csv
+- jupyter notebook
+- pandas
 
 ## Next Update:
-Simplify and Organise the project with various functions of **Pandas** and the use of **Jupyter Notebook**
+Implementing the **Polars** library to handle larger data effectively.
